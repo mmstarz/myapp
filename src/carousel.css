@@ -1,0 +1,14 @@
+.mycarousel {
+    margin: auto;
+    float: center;   
+    box-align: center;
+    position: absolute;
+}
+
+.mycarousel-item {
+    margin: auto;
+    float: center;
+    width: 100%;    
+    box-align: center;
+    position: relative;
+}
