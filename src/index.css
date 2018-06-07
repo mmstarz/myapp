@@ -1,15 +1,17 @@
+body, html {
+  height: 100%;
+}
+  
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
-.cool {  
-  line-height: 300%;
-  font-weight: bold; 
-  font-size: 130%;    
-}
-
-.currentColor {    
-  color: rgb(177, 80, 113);
+  /* The image used */
+  background: url("./background/engine.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
