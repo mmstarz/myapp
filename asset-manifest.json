@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.a6bf5d37.css",
-  "main.css.map": "static/css/main.a6bf5d37.css.map",
-  "main.js": "static/js/main.a2b364c7.js",
-  "main.js.map": "static/js/main.a2b364c7.js.map",
+  "main.css": "static/css/main.e3dd8007.css",
+  "main.css.map": "static/css/main.e3dd8007.css.map",
+  "main.js": "static/js/main.f17d86f2.js",
+  "main.js.map": "static/js/main.f17d86f2.js.map",
   "static\\media\\016-login.png": "static/media/016-login.45136c28.png",
   "static\\media\\engine.jpeg": "static/media/engine.1ca6e788.jpeg",
   "static\\media\\logo2.png": "static/media/logo2.7bfa1863.png",
@@ -14,10 +14,11 @@
   "static\\media\\pho14.jpg": "static/media/pho14.9a1cb430.jpg",
   "static\\media\\pho2.jpg": "static/media/pho2.17d75649.jpg",
   "static\\media\\pho3.jpg": "static/media/pho3.369103c1.jpg",
-  "static\\media\\pho4.jpg": "static/media/pho4.7a9f8da0.jpg",
-  "static\\media\\pho5.jpg": "static/media/pho5.08f35cd8.jpg",
-  "static\\media\\pho6.jpg": "static/media/pho6.7ed0dafb.jpg",
-  "static\\media\\pho7.jpg": "static/media/pho7.4b5c5754.jpg",
-  "static\\media\\pho8.jpg": "static/media/pho8.ab1d14ac.jpg",
-  "static\\media\\pho9.jpg": "static/media/pho9.1a1ab2bd.jpg"
+  "static\\media\\pho4.jpg": "static/media/pho4.6b428237.jpg",
+  "static\\media\\pho5.jpg": "static/media/pho5.1fcc9f79.jpg",
+  "static\\media\\pho6.jpg": "static/media/pho6.429ee820.jpg",
+  "static\\media\\pho7.jpg": "static/media/pho7.cef98403.jpg",
+  "static\\media\\pho8.jpg": "static/media/pho8.00346c07.jpg",
+  "static\\media\\pho9.jpg": "static/media/pho9.1a1ab2bd.jpg",
+  "static\\media\\vid1.mp4": "static/media/vid1.ef69fb88.mp4"
 }

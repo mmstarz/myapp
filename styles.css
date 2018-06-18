@@ -210,19 +210,24 @@ border-bottom-color: #fff;
     align-items: center;
 }
 
-.carousel-inner > .carousel-item > .card {
+.card {
+    width: 100%;
+    margin: 0%;
+}
+
+.carousel-inner > .carousel-item > .flipcard {
     margin: 0 auto;
     align-items: center;
 }
 
 .carousel-control-prev {
-    width: 100px;
-    height: 100px;
+    width: 5%;
+    height: 5%;
 }
 
 .carousel-control-next {
-    width: 100px;
-    height: 100px;
+    width: 5%;
+    height: 5%;
 }
 
 .icon-prev {
@@ -243,7 +248,7 @@ border-bottom-color: #fff;
     perspective: 800;
     -moz-perspective: 800;
     -webkit-perspective: 800;
-    width: 30%;
+    width: 100%;
     border-radius: 25px;
     transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
@@ -279,11 +284,15 @@ border-bottom-color: #fff;
 }
 
 .flipcard .front {
-    display: block;
+    display: block;    
 }
 
 .back {
-    width: 200%
+    width: 80%
+}
+
+.front {
+    width: 100%;
 }
 
 .flipcard.flipped .front {
@@ -360,7 +369,21 @@ img:hover {
 }
 
 .modal-lg {
-    max-width: 80% !important;
+    max-width: 100% !important;
+}
+
+.mymodal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: table;
+}
+
+.mymodal > .modal-content {
+    display: table-cell;
 }
 
 .arrowL {
@@ -401,8 +424,19 @@ img:hover {
 
 .carousel-indicators > li {
     border-radius: 50%;
-    padding: 15px;
-    width: 12px;
-    height: 12px;
+    padding: 3%;
+    width: 3%;
+    height: 3%;
     background-color: #404040;
+}
+
+.player-wrapper {
+    position: relative;
+    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+}
+  
+.react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
