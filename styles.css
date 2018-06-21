@@ -37,6 +37,10 @@ padding: 30px;
 margin-top: 20px;
 }
 
+.carousel-inner:hover {    
+    box-shadow: 0 0 2em purple;    
+}
+
 .masthead-nav > li {
 display: inline-block;
 }
@@ -257,7 +261,7 @@ border-bottom-color: #fff;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 .flipcard:hover {
