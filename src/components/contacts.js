@@ -3,10 +3,10 @@ import React from 'react';
 const contacts = (props) => {
     return(
         <div className="modal fade" id="contacts" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div className="modal-dialog" role="document">
+            <div className="modal-dialog modal-dialog-centered" role="document">
                 <div className="modal-content">
                     <div className="modal-header bgimg4">
-                        <h3 className="modal-title text-light mytext1" id="exampleModalLabel"><strong><bold>Contacts Information</bold></strong></h3>
+                        <h3 className="modal-title text-light mytext1" id="exampleModalLabel"><strong>Contacts Information</strong></h3>
                         <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>

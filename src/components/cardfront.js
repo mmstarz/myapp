@@ -1,9 +1,8 @@
 import React from 'react';
-import logo2 from '../icons/logo2.png';
 
 const cardfront = (props) => {
     return(
-        <div className="face front">
+        <div className="face front" id={'card' + props.id}>
             <div className="card-header text-center mytext1">            
                 <h3>Touch Me</h3>
                 <h4>slot# {props.id}</h4>
@@ -14,12 +13,7 @@ const cardfront = (props) => {
                 <p className="card-text mytext1">{props.model}</p>
                 <p className="card-text mytext1">{props.year}</p>
                 <p className="card-text text-success">{props.title}</p>
-            </div>
-            <div className="card-body">
-                <a className="btn btn-3 text-dark" style={{ width: '80%', height: '30%' }}>
-                    <img className="rounded blurbox" src={logo2} style={{ width: '100%', height: '100%' }} alt="logo" />
-                </a>
-            </div>
+            </div>            
         </div>
     )
 } 

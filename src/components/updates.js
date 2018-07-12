@@ -1,32 +1,5 @@
 import React, { Component } from 'react';
 
-let histList = [
-    {
-        id: 4,
-        trademark: 'lexus',
-        year: '2010',
-        model: 'CT 200H',
-        date: '01.06.2018',
-        status: 'new'
-    },
-    {
-        id: 5,
-        trademark: 'volkswagen',
-        year: '2011',
-        model: 'Golf',
-        date: '01.01.2018',
-        status: 'sold'
-    },
-    {
-        id: 6,
-        trademark: 'mitsubishi',
-        year: '2012',
-        model: 'Lancer',
-        date: '03.08.2018',
-        status: 'sold'
-    },
-]
-
 class Updates extends Component {    
 
     createHistTable = () => {
@@ -50,7 +23,7 @@ class Updates extends Component {
     render() {
         return(
             <div className="modal fade" id="updates" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div className="modal-dialog" role="document">
+                <div className="modal-dialog modal-dialog-centered" role="document">
                     <div className="modal-content">
                         <div className="modal-header bgimg4">
                             <h3 className="modal-title text-light mytext1" id="exampleModalLabel"><strong>Updates Information</strong></h3>

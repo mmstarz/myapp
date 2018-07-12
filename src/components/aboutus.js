@@ -3,7 +3,7 @@ import React from 'react';
 const aboutus = (props) => {
     return(
         <div className="modal fade" id="aboutus" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-            <div className="modal-dialog" role="document">
+            <div className="modal-dialog modal-dialog-centered" role="document">
                 <div className="modal-content">
                     <div className="modal-header bgimg4">
                         <h5 className="modal-title text-light mytext1" id="exampleModalLongTitle">L&K Trading</h5>

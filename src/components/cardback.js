@@ -11,38 +11,11 @@ const cardback = (props) => {
                 <div className="col d-inline-flex">
                     <a className="btn mybtn btn-2" data-toggle="modal" data-target={"#gallery" + props.id}>Photo gallery</a>
                 </div>
+                <div className="col d-inline-flex">
+                    <a className="btn mybtn btn-2" data-toggle="modal" data-target={"#vgallery" + props.id}>Video</a>
+                </div>
             </div>
-            <div className="row">
-                <div className="col">            
-                    <div className="form-group row">
-                        <div className="col d-inline-flex">
-                            <a className="thumbnail" data-toggle="modal" id="backimg1" data-title="picture1" data-target="#">
-                                <img className="img-responsive" style={{width: '100%', height: '100%'}} src={props.src1} alt="back side pic 1" />
-                            </a>
-                        </div>
-                    </div>
-                    <div className="form-group row">
-                        <div className="col d-inline-flex">
-                            <a className="thumbnail" data-toggle="modal" id="backimg1" data-title="picture2" data-target="#">
-                                <img className="img-responsive" style={{width: '100%', height: '100%'}} src={props.src2} alt="back side pic 2" />
-                            </a>
-                        </div>
-                    </div>
-                    <div className="form-group row">
-                        <div className="col d-inline-flex">
-                            <a className="thumbnail" data-toggle="modal" id="backimg1" data-title="picture3" data-target="#">
-                                <img className="img-responsive" style={{width: '100%', height: '100%'}} src={props.src3} alt="back side pic 3" />
-                            </a>
-                        </div>
-                    </div>
-                    <div className="form-group row">
-                        <div className="col d-inline-flex">
-                            <a className="thumbnail" data-toggle="modal" id="backimg1" data-title="picture3" data-target="#">
-                                <img className="img-responsive" style={{width: '100%', height: '100%'}} src={props.src4} alt="back side pic 4" />
-                            </a>
-                        </div>
-                    </div>
-                </div>        
+            <div className="row">                                        
                 <div className="col">
                     <table className="table table-hover table-dark blurbox" stytle={{width: '100%' }}>
                         <thead>
@@ -57,7 +30,7 @@ const cardback = (props) => {
                                 <th scope="row">1</th>
                                 <td colSpan="2">Mark:</td>
                                 <td>{props.trademark}</td>
-                            </tr>
+                            </tr>                            
                             <tr>
                                 <th scope="row">2</th>
                                 <td colSpan="2">Engine type:</td>
@@ -112,6 +85,11 @@ const cardback = (props) => {
                                 <th scope="row">12</th>
                                 <td colSpan="2">Defects:</td>
                                 <td>{props.defects}</td>
+                            </tr>
+                            <tr className="bg-dark">
+                                <th scope="row">13</th>
+                                <td colSpan="2">Location:</td>
+                                <td>{props.location}</td>
                             </tr>                    
                         </tbody>
                     </table>

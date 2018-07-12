@@ -1,29 +1,51 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class LoginForm extends Component {
+const aEmail = 'test@test.com';
+const aPassword = 'test';
+
+class LoginForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             email: '',
             password: '',
-        };    
-        this.handleChange = this.handleChange.bind(this);
+            emailValidation: 'is-invalid',
+            passwordValidation: 'is-invalid',
+            logged: false,          
+        };  
+      
         this.handleSubmit = this.handleSubmit.bind(this);
-    }
-    
-    handleChange(event) {
-        this.setState({
-            email: event.target.email,
-            password: event.target.password
-        });       
-    }
-    
-    handleSubmit(event) {
-        alert('An email was submitted: ' + this.state.email);
-        event.preventDefault();
+        this.emailChange = this.emailChange.bind(this);
+        this.passwordChange = this.passwordChange.bind(this);
     }
 
-    render() {
+    emailChange = (event) => {
+        this.setState({ email: event.target.value }, () => {            
+            if(this.state.email === aEmail) {
+                this.setState({emailValidation: 'is-valid'})                        
+            }  
+        });
+    }
+
+    passwordChange = (event) => {              
+        this.setState({ password: event.target.value }, () => {            
+            if(this.state.password === aPassword) {
+                this.setState({passwordValidation: 'is-valid'})                
+            }
+        });
+    }
+  
+    handleSubmit = (event) => {        
+        if(this.state.emailValidation === 'is-valid' && this.state.passwordValidation === 'is-valid') {
+            this.setState({ logged: true }, () => {
+                alert('login: success' );                
+                this.setState({logged: true});
+                console.log(this.state.logged);
+            });                        
+        }        
+    }
+
+    render() {    
         return(
             <div className="modal fade" id="login" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered" role="document">
@@ -35,22 +57,20 @@ class LoginForm extends Component {
                             </button>
                         </div>
                         <div className="modal-body">
-                            <form method="post" onSubmit={this.handleSubmit}>
-                                <div className="form-group row">
-                                    <label htmlFor="inputEmail3" className="col-2 col-form-label">Email</label>
+                            <form onSubmit={this.handleSubmit}>
+                                <div className="form-group row">                                
                                     <div className="col-10">
-                                        <input type="email" value={this.state.email} onChange={this.handleChange} className="form-control" name="email2" id="inputEmail3" placeholder="Email" />
+                                        <input type="email" value={this.state.email} onChange={this.emailChange} className={"form-control " + this.state.emailValidation} name="email" placeholder="email" />
                                     </div>
                                 </div>
-                                <div className="form-group row">
-                                    <label htmlFor="inputPassword3" className="col-2 col-form-label">Password</label>
+                                <div className="form-group row">                                
                                     <div className="col-10">
-                                        <input type="password" value={this.state.password} onChange={this.handleChange} className="form-control" name="password2" id="inputPassword3" placeholder="Password" />
+                                        <input type="password" value={this.state.password} onChange={this.passwordChange} className={"form-control " + this.state.passwordValidation} name="password" placeholder="password" />
                                     </div>
                                 </div>
                                 <div className="form-group row">
                                     <div className="col-2">
-                                        <button type="submit" name="loginbtn" className="btn btn-primary">Login</button>
+                                        <button type="submit" className="btn btn-primary">Login</button>
                                     </div>
                                 </div>
                             </form>
@@ -61,7 +81,7 @@ class LoginForm extends Component {
                     </div>
                 </div>
             </div>    
-        )
+        )    
     }
 }
 
